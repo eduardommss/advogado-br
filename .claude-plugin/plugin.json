@@ -1,0 +1,13 @@
+{
+  "name": "advogado-br",
+  "displayName": "Advogado BR",
+  "version": "2.0.0",
+  "description": "Agente jurídico de direito brasileiro: analisa e redige contratos, monta estratégia processual, testa a tese contra advogado contrário e juiz simulado, confere toda citação (lei, súmula, tema, acórdão) contra a base oficial e organiza cada caso em pastas. A base de leis (ctresb/leis) é baixada e atualizada sozinha; requer o uv.",
+  "author": {
+    "name": "Eduardo Silva"
+  },
+  "homepage": "https://github.com/eduardommss/advogado-br",
+  "repository": "https://github.com/eduardommss/advogado-br",
+  "license": "MIT",
+  "keywords": ["juridico", "direito", "brasil", "contratos", "processo", "leis", "mcp"]
+}

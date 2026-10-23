@@ -1,0 +1,62 @@
+name: Base de leis
+
+# Gera o índice da base ctresb/leis e publica como Release ("base-AAAAMMDD").
+# O plugin baixa sempre a release mais recente: https://github.com/<repo>/releases/latest/download/leis.db.gz
+on:
+  schedule:
+    - cron: "17 6 * * 1"      # segunda-feira, 03:17 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "dados/complementos/**"
+      - "mcp/indexador.py"
+      - "scripts/gerar_base.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: base-de-leis
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Baixar ctresb/leis (parcial)
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/ctresb/leis leis
+          git -C leis sparse-checkout set --no-cone /constituicao.md /jurisprudencia/ \
+            /federal/leis-ordinarias/ /federal/leis-complementares/ /federal/decretos-lei/
+
+      - name: Gerar e testar a base
+        run: |
+          export TAG="base-$(date -u +%Y%m%d)-${{ github.run_number }}"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          python scripts/gerar_base.py --leis leis --saida dist
+
+      - name: Publicar Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          normas=$(python -c "import json;print(json.load(open('dist/manifest.json'))['normas'])")
+          origem=$(python -c "import json;print(json.load(open('dist/manifest.json'))['origem'])")
+          gh release create "$TAG" dist/leis.db.gz dist/manifest.json dist/leis.db.gz.sha256 \
+            --title "Base de leis $TAG" --latest \
+            --notes "Índice gerado de ${origem} — ${normas} normas. Baixado automaticamente pelo plugin advogado-br."
+
+      - name: Manter só as 4 bases mais recentes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release list --limit 100 --json tagName,createdAt \
+            --jq '[.[] | select(.tagName | startswith("base-"))] | sort_by(.createdAt) | reverse | .[4:] | .[].tagName' |
+          while read -r tag; do gh release delete "$tag" --yes --cleanup-tag; done

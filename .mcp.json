@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "advogado-br": {
+      "command": "uv",
+      "args": ["run", "--quiet", "--script", "${CLAUDE_PLUGIN_ROOT}/mcp/servidor.py"]
+    }
+  }
+}

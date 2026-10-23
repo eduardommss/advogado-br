@@ -1,0 +1,61 @@
+# Apelidos de leis -> arquivo no repositório ctresb/leis.
+# O agente usa isso para achar rápido "CC", "CPC", "CDC" etc.
+# Para adicionar uma lei: apelido -> caminho relativo à raiz do repositório.
+CF: constituicao.md
+CONSTITUICAO: constituicao.md
+CONSTITUICAO FEDERAL: constituicao.md
+CRFB: constituicao.md
+CF/88: constituicao.md
+CC: federal/leis-ordinarias/2002/lei-10406-2002-01-10.md
+CODIGO CIVIL: federal/leis-ordinarias/2002/lei-10406-2002-01-10.md
+CPC: federal/leis-ordinarias/2015/lei-13105-2015-03-16.md
+CODIGO DE PROCESSO CIVIL: federal/leis-ordinarias/2015/lei-13105-2015-03-16.md
+CDC: federal/leis-ordinarias/1990/lei-8078-1990-09-11.md
+CODIGO DE DEFESA DO CONSUMIDOR: federal/leis-ordinarias/1990/lei-8078-1990-09-11.md
+CLT: federal/decretos-lei/1943/del-5452-1943-05-01.md
+CP: federal/decretos-lei/1940/del-2848-1940-12-07.md
+CODIGO PENAL: federal/decretos-lei/1940/del-2848-1940-12-07.md
+CPP: federal/decretos-lei/1941/del-3689-1941-10-03.md
+CODIGO DE PROCESSO PENAL: federal/decretos-lei/1941/del-3689-1941-10-03.md
+CTN: federal/leis-ordinarias/1966/lei-5172-1966-10-25.md
+CODIGO TRIBUTARIO NACIONAL: federal/leis-ordinarias/1966/lei-5172-1966-10-25.md
+LINDB: federal/decretos-lei/1942/del-4657-1942-09-04.md
+ECA: federal/leis-ordinarias/1990/lei-8069-1990-07-13.md
+CTB: federal/leis-ordinarias/1997/lei-9503-1997-09-23.md
+CODIGO DE TRANSITO: federal/leis-ordinarias/1997/lei-9503-1997-09-23.md
+LEI DO INQUILINATO: federal/leis-ordinarias/1991/lei-8245-1991-10-18.md
+INQUILINATO: federal/leis-ordinarias/1991/lei-8245-1991-10-18.md
+LGPD: federal/leis-ordinarias/2018/lei-13709-2018-08-14.md
+MARCO CIVIL DA INTERNET: federal/leis-ordinarias/2014/lei-12965-2014-04-23.md
+LEI DE ARBITRAGEM: federal/leis-ordinarias/1996/lei-9307-1996-09-23.md
+ARBITRAGEM: federal/leis-ordinarias/1996/lei-9307-1996-09-23.md
+JUIZADOS ESPECIAIS: federal/leis-ordinarias/1995/lei-9099-1995-09-26.md
+LEI 9099: federal/leis-ordinarias/1995/lei-9099-1995-09-26.md
+JUIZADOS ESPECIAIS FEDERAIS: federal/leis-ordinarias/2001/lei-10259-2001-07-12.md
+LEI DAS SA: federal/leis-ordinarias/1976/lei-6404-1976-12-15.md
+LEI DAS S.A.: federal/leis-ordinarias/1976/lei-6404-1976-12-15.md
+LEI DE FALENCIAS: federal/leis-ordinarias/2005/lei-11101-2005-02-09.md
+RECUPERACAO JUDICIAL: federal/leis-ordinarias/2005/lei-11101-2005-02-09.md
+BEM DE FAMILIA: federal/leis-ordinarias/1990/lei-8009-1990-03-29.md
+ALIENACAO FIDUCIARIA DE IMOVEIS: federal/leis-ordinarias/1997/lei-9514-1997-11-20.md
+LEI DE LICITACOES: federal/leis-ordinarias/2021/lei-14133-2021-04-01.md
+IMPROBIDADE: federal/leis-ordinarias/1992/lei-8429-1992-06-02.md
+ESTATUTO DA OAB: federal/leis-ordinarias/1994/lei-8906-1994-07-04.md
+MANDADO DE SEGURANCA: federal/leis-ordinarias/2009/lei-12016-2009-08-07.md
+EXECUCAO FISCAL: federal/leis-ordinarias/1980/lei-6830-1980-09-22.md
+ACAO CIVIL PUBLICA: federal/leis-ordinarias/1985/lei-7347-1985-07-24.md
+ESTATUTO DA PESSOA IDOSA: federal/leis-ordinarias/2003/lei-10741-2003-10-01.md
+MARIA DA PENHA: federal/leis-ordinarias/2006/lei-11340-2006-08-07.md
+LIBERDADE ECONOMICA: federal/leis-ordinarias/2019/lei-13874-2019-09-20.md
+FRANQUIA: federal/leis-ordinarias/2019/lei-13966-2019-12-26.md
+REPRESENTACAO COMERCIAL: federal/leis-ordinarias/1965/lei-4886-1965-12-09.md
+PROPRIEDADE INDUSTRIAL: federal/leis-ordinarias/1996/lei-9279-1996-05-14.md
+DIREITOS AUTORAIS: federal/leis-ordinarias/1998/lei-9610-1998-02-19.md
+LEI DO SOFTWARE: federal/leis-ordinarias/1998/lei-9609-1998-02-19.md
+LEI DO CHEQUE: federal/leis-ordinarias/1985/lei-7357-1985-09-02.md
+DUPLICATAS: federal/leis-ordinarias/1968/lei-5474-1968-07-18.md
+TRABALHO TEMPORARIO: federal/leis-ordinarias/1974/lei-6019-1974-01-03.md
+LEI ANTICORRUPCAO: federal/leis-ordinarias/2013/lei-12846-2013-08-01.md
+SIMPLES NACIONAL: federal/leis-complementares/2006/lcp-123-2006-12-14.md
+LC 123: federal/leis-complementares/2006/lcp-123-2006-12-14.md
+SUPERENDIVIDAMENTO: federal/leis-ordinarias/2021/lei-14181-2021-07-01.md

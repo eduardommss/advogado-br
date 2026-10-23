@@ -1,0 +1,8 @@
+{
+  "name": "advogado-br",
+  "owner": { "name": "Eduardo Silva" },
+  "description": "Agente jurídico de direito brasileiro para o Claude",
+  "plugins": [
+    { "name": "advogado-br", "source": "./", "description": "Agente jurídico de direito brasileiro: contratos, estratégia processual, verificação de citações e organização de casos." }
+  ]
+}
